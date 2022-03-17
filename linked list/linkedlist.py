@@ -9,9 +9,11 @@ class linkedlist:
         
     def out(self):
         temp = self.head
+        res = []
         while temp:
-            print(temp.data)
+            res.append(temp.data)
             temp = temp.next
+        print(res)
         
     def push(self, data):
         node = Node(data)
@@ -206,7 +208,7 @@ ll.push(7)
 # ll.delD()
 # ll.rotate(3)
 # ll.delo(6)
-# ll.out()
+ll.out()
 
 ll2 = linkedlist()
 ll2.push(10)
